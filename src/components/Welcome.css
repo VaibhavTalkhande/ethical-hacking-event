@@ -1,0 +1,57 @@
+.title{
+    font-size: 8em; 
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em 0;
+    color: #fff;
+
+}
+.welcome{
+    font-size: 1em;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color:green;
+    padding:0;
+    
+    
+    
+}
+.welcome button{
+    padding: 1em 2em;; 
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.welcome button:hover{
+    box-shadow:10px 1px 25px green;
+}
+.welcome input{
+    padding: 1em 2em;;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid green;
+    margin: em 0;
+    width: 80%;
+    background:none;
+    transition: 0.3s;
+    color: green;
+}
+.welcome input:focus{
+    box-shadow:0px 0px 20px green;
+    border: 1px solid green;
+    outline: none;
+}
+.welcome label{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: green;
+    margin: 1em 0;
+    text-align: center;
+}

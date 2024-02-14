@@ -1,0 +1,104 @@
+.quiz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: em 0;
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    border-radius: 10px;
+    border: 1px solid green;
+}
+p{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 100%;
+    padding: 10em 0;
+    background-color: #000;
+}
+.result p{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+}
+.result h1{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    width: 50%;
+}
+.result h2{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+}
+
+.quiz ul{
+    list-style: none;
+    padding: 1.5em;
+    margin: 0;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.5em;
+    font-size: 1.5em;
+    min-width: 50%;
+    height: 100%;
+}
+.quiz ul li{
+    padding:0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    width:90%;
+    
+}
+
+.quiz ul li:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.option {
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: green;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .selected {
+    background-color: #007bff;
+    color: #fff;
+  }

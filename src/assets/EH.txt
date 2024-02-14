@@ -1,0 +1,355 @@
+Sure, here's an extended list of 50 Linux multiple-choice questions:
+
+1. What does "CLI" stand for in Linux?
+   a) Command Line Interface
+   b) Common Linux Instruction
+   c) Control Line Interface
+   d) Computer Language Interface
+
+2. Which command is used to list the contents of a directory in Linux?
+   a) ls
+   b) cd
+   c) dir
+   d) list
+
+3. In Linux, what command is used to create a new directory?
+   a) newdir
+   b) mkdir
+   c) touch
+   d) mkfile
+
+4. What command is used to display the manual of a command in Linux?
+   a) man
+   b) help
+   c) info
+   d) doc
+
+5. Which command is used to change permissions of a file in Linux?
+   a) chmod
+   b) chperm
+   c) chown
+   d) perm
+
+6. What does the command "pwd" stand for in Linux?
+   a) Print Working Directory
+   b) Present Working Directory
+   c) Print Directory
+   d) Path Working Directory
+
+7. Which command is used to copy files or directories in Linux?
+   a) cp
+   b) mv
+   c) copy
+   d) duplicate
+
+8. What command is used to remove a directory in Linux?
+   a) rmdir
+   b) rm
+   c) remove
+   d) delete
+
+9. Which command is used to search for files or directories in Linux?
+   a) find
+   b) search
+   c) locate
+   d) seek
+
+10. What does the command "grep" do in Linux?
+    a) Display disk usage
+    b) Find and replace text
+    c) Search for a pattern in files
+    d) Print system information
+
+11. Which command is used to display the current date and time in Linux?
+    a) date
+    b) time
+    c) datetime
+    d) clock
+
+12. In Linux, what command is used to navigate to the parent directory?
+    a) up
+    b) parent
+    c) cd ..
+    d) back
+
+13. What command is used to display the last few lines of a file in Linux?
+    a) tail
+    b) head
+    c) less
+    d) more
+
+14. Which command is used to terminate a running process in Linux?
+    a) kill
+    b) stop
+    c) end
+    d) terminate
+
+15. What does the command "sudo" do in Linux?
+    a) Switch user to root
+    b) Super user do
+    c) Execute a command as another user
+    d) Start a new terminal session
+
+16. Which command is used to display the system's network connections in Linux?
+    a) netstat
+    b) ifconfig
+    c) ip
+    d) network
+
+17. In Linux, what command is used to display the contents of a file?
+    a) cat
+    b) show
+    c) display
+    d) print
+
+18. What does the command "chmod 755 file.txt" do in Linux?
+    a) Gives read and write permission to the owner, read permission to the group and others, and execute permission to all
+    b) Gives execute permission to the owner, read and write permission to the group and others
+    c) Gives read and write permission to the owner, execute permission to the group and others
+    d) Gives read, write, and execute permission to the owner, and no permissions to others
+
+19. Which command is used to display the disk usage of files and directories in Linux?
+    a) du
+    b) diskusage
+    c) usage
+    d) diskspace
+
+20. What does the command "df -h" do in Linux?
+    a) Displays disk fragmentation
+    b) Displays disk format
+    c) Displays disk free space in a human-readable format
+    d) Displays disk firmware information
+
+21. Which command is used to rename a file in Linux?
+    a) mv
+    b) rename
+    c) cp
+    d) rn
+
+22. What command is used to compress files or directories in Linux?
+    a) zip
+    b) gzip
+    c) compress
+    d) pack
+
+23. In Linux, what command is used to unzip a compressed file?
+    a) unzip
+    b) uncompress
+    c) gunzip
+    d) untar
+
+24. Which command is used to display a list of currently logged in users in Linux?
+    a) who
+    b) users
+    c) loggedin
+    d) whousers
+
+25. What does the command "ls -l" do in Linux?
+    a) Lists files in long format
+    b) Lists files in detailed format
+    c) Lists files with timestamps
+    d) Lists files in alphabetical order
+
+26. Which command is used to create a symbolic link in Linux?
+    a) ln -s
+    b) symlink
+    c) link
+    d) mklink
+
+27. In Linux, what command is used to shutdown the system?
+    a) shutdown
+    b) poweroff
+    c) halt
+    d) close
+
+28. What command is used to display the current user's username in Linux?
+    a) whoami
+    b) username
+    c) me
+    d) currentuser
+
+29. Which command is used to list all environment variables in Linux?
+    a) env
+    b) vars
+    c) variables
+    d) showenv
+
+30. What does the command "echo" do in Linux?
+    a) Display system information
+    b) Print text to the terminal
+    c) Show environment variables
+    d) Create a new file
+
+31. Which command is used to create an empty file in Linux?
+    a) touch
+    b) newfile
+    c) create
+    d) mkfile
+
+32. What does the command "ps" do in Linux?
+    a) Prints the system information
+    b) Lists all running processes
+    c) Pauses a process
+    d) Stops a process
+
+33. Which command is used to set the system's hostname in Linux?
+    a) hostname
+    b) sethost
+    c) host
+    d) systemname
+
+34. In Linux, what command is used to change the current user's password?
+    a) passwd
+    b) changepass
+    c) setpassword
+    d) alterpass
+
+35. What does the command "whoami" do in Linux?
+    a) Displays the current user's username
+    b) Displays the system's hostname
+    c) Displays the current date and time
+    d) Displays the current working directory
+
+36. Which command is used to extract files from a tarball in Linux?
+    a) tar -xvf
+    b) untar
+    c) extract
+    d) unzip
+
+37. What does the command "chown" do in Linux?
+    a) Change ownership of a file or directory
+    b) Change permissions of a file or directory
+    c) Change the current working directory
+    d) Change the
+
+ shell prompt
+
+38. Which command is used to view the contents of a file page by page in Linux?
+    a) less
+    b) more
+    c) cat
+    d) tail
+
+39. What does the command "history" do in Linux?
+    a) Displays the history of commands executed in the current session
+    b) Displays the system's history of uptime
+    c) Displays the history of file modifications
+    d) Displays the history of system reboots
+
+40. Which command is used to make a file or directory hidden in Linux?
+    a) hide
+    b) hidden
+    c) mv
+    d) rename
+
+41. In Linux, what command is used to archive files?
+    a) tar
+    b) compress
+    c) zip
+    d) gzip
+
+42. What does the command "uname -a" do in Linux?
+    a) Displays the current user's username
+    b) Displays the system's kernel information
+    c) Displays the system's architecture
+    d) Displays the system's hostname
+
+43. Which command is used to send a signal to a process in Linux?
+    a) kill
+    b) terminate
+    c) end
+    d) stop
+
+44. In Linux, what command is used to print a message on the terminal?
+    a) echo
+    b) print
+    c) message
+    d) display
+
+45. What does the command "tail -n 10 file.txt" do in Linux?
+    a) Displays the last 10 lines of the file
+    b) Displays the first 10 lines of the file
+    c) Appends 10 lines to the end of the file
+    d) Removes the last 10 lines from the file
+
+46. Which command is used to show the current date and time continuously in Linux?
+    a) watch date
+    b) time
+    c) date
+    d) clock
+
+47. What does the command "wc" do in Linux?
+    a) Displays the word count of a file
+    b) Counts the number of lines in a file
+    c) Counts the number of characters in a file
+    d) All of the above
+
+48. Which command is used to change the shell prompt in Linux?
+    a) PS1
+    b) prompt
+    c) changeprompt
+    d) shellprompt
+
+49. What does the command "apt-get" do in Linux?
+    a) Installs or updates packages in Debian-based systems
+    b) Retrieves system information
+    c) Manages disk partitions
+    d) None of the above
+
+50. Which command is used to create a new user in Linux?
+    a) adduser
+    b) createuser
+    c) useradd
+    d) newuser
+
+Answers:
+1. a) Command Line Interface
+2. a) ls
+3. b) mkdir
+4. a) man
+5. a) chmod
+6. a) Print Working Directory
+7. a) cp
+8. b) rm
+9. a) find
+10. c) Search for a pattern in files
+11. a) date
+12. c) cd ..
+13. a) tail
+14. a) kill
+15. a) Switch user to root
+16. a) netstat
+17. a) cat
+18. a) Gives read and write permission to the owner, read permission to the group and others, and execute permission to all
+19. a) du
+20. c) Displays disk free space in a human-readable format
+21. a) mv
+22. b) gzip
+23. c) gunzip
+24. a) who
+25. a) Lists files in long format
+26. a) ln -s
+27. a) shutdown
+28. a) whoami
+29. a) env
+30. b) Print text to the terminal
+31. a) touch
+32. b) Lists all running processes
+33. a) hostname
+34. a) passwd
+35. a) Displays the current user's username
+36. a) tar -xvf
+37. a) Change ownership of a file or directory
+38. a) less
+39. a) Displays the history of commands executed in the current session
+40. a) hide
+41. a) tar
+42. b) Displays the system's kernel information
+43. a) kill
+44. a) echo
+45. a) Displays the last 10 lines of the file
+46. a) watch date
+47. d) All of the above
+48. a) PS1
+49. a) Installs or updates packages in Debian-based systems
+50. c) useradd
