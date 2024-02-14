@@ -60,6 +60,9 @@
     .welcome{
         padding: 0;
     }
+    .title{
+        font-size: 4em;
+    }
     .welcome label{
         font-size: 2em;
     }
