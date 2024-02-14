@@ -3,8 +3,8 @@ import './Quiz.css';
 const Quiz = ({ userName }) => {
   const [questions, setQuestions] = useState([]); // Array of quiz questions
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState('');
-  const [timer, setTimer] = useState(300); // 5 minutes in seconds
+  const [selectedAnswers, setSelectedAnswers] = useState(Array(questions.length).fill(''));
+  const [timer, setTimer] = useState(900); // 5 minutes in seconds
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [startTime, setStartTime] = useState(null);
@@ -68,42 +68,37 @@ const Quiz = ({ userName }) => {
           
     ];
     setQuestions(dummyQuestions);
-    console.log(dummyQuestions.length);
+    setSelectedAnswers(Array(dummyQuestions.length).fill(''));
   }, []);
 
-  // Handle next question button click
-  const handleNextQuestion = () => {
+   // Handle next question button click
+   const handleNextQuestion = () => {
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setSelectedAnswer('');
     } else {
       // Quiz completed
       setShowResult(true);
     }
   };
 
+  // Handle previous question button click
+  const handlePreviousQuestion = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(currentQuestionIndex - 1);
+    }
+  };
+
   // Handle selecting an answer
   const handleAnswerSelect = (answer) => {
-    setSelectedAnswer(answer);
+    const updatedSelectedAnswers = [...selectedAnswers];
+    updatedSelectedAnswers[currentQuestionIndex] = answer;
+    setSelectedAnswers(updatedSelectedAnswers);
     // Check if the selected answer is correct
     if (answer === questions[currentQuestionIndex].answer) {
       setScore(score + 1);
     }
   };
 
-  // Timer logic
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setTimer(prevTimer => prevTimer - 1);
-  //     if (timer === 0) {
-  //       clearInterval(interval);
-  //       setShowResult(true);
-  //     }
-  //   }, 1000);
-
-  //   // Clear interval on unmount
-  //   return () => clearInterval(interval);
-  // }, [timer]);
   // Timer logic
   useEffect(() => {
     let interval;
@@ -152,14 +147,6 @@ const Quiz = ({ userName }) => {
         <h1>{userName}</h1>
         <h1>Time Taken: {calculateTimeTaken()}</h1> 
         <h1>your score is {score} out of {questions.length}!</h1>
-        {/* <h3>Correct Answers:</h3>
-        <ul>
-          {questions.map((question, index) => (
-            <li key={index}>
-              {question.question} - {question.answer}
-            </li>
-          ))}
-        </ul> */}
       </div>
     );
   }
@@ -170,18 +157,21 @@ const Quiz = ({ userName }) => {
       <h3>Question {currentQuestionIndex + 1}</h3>
       <p>{questions[currentQuestionIndex]?.question}</p>
       <ul>
-          {questions[currentQuestionIndex]?.options.map((option, index) => (
-            <li key={index}>
-              <div 
-                className={`option ${selectedAnswer === option ? 'selected' : ''}`}
-                onClick={() => handleAnswerSelect(option)}
-              >
-                {option}
-              </div>
-            </li>
-          ))}
+        {questions[currentQuestionIndex]?.options.map((option, index) => (
+          <li key={index}>
+            <div 
+              className={`option ${selectedAnswers[currentQuestionIndex] === option ? 'selected' : ''}`}
+              onClick={() => handleAnswerSelect(option)}
+            >
+              {option}
+            </div>
+          </li>
+        ))}
       </ul>
-      <button onClick={handleNextQuestion} disabled={!selectedAnswer}>Next Question</button>
+      <div>
+      {currentQuestionIndex > 0 && <button onClick={handlePreviousQuestion}>Previous Question</button>}
+      <button onClick={handleNextQuestion}>Next Question</button>
+      </div>
       <div>Time Left: {formatTime(timer)}</div>
     </div>
   );
