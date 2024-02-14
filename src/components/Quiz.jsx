@@ -154,6 +154,7 @@ const Quiz = ({ userName }) => {
   return (
     <div className='quiz'>
       <h2>Welcome {userName}!</h2>
+        <div className='time'>Time Left: {formatTime(timer)}</div>
       <h3>Question {currentQuestionIndex + 1}</h3>
       <p>{questions[currentQuestionIndex]?.question}</p>
       <ul>
@@ -169,10 +170,9 @@ const Quiz = ({ userName }) => {
         ))}
       </ul>
       <div>
-      {currentQuestionIndex > 0 && <button onClick={handlePreviousQuestion}>Previous Question</button>}
+        {currentQuestionIndex > 0 && <button onClick={handlePreviousQuestion}>Previous Question</button>}
       <button onClick={handleNextQuestion}>Next Question</button>
       </div>
-      <div>Time Left: {formatTime(timer)}</div>
     </div>
   );
 };
