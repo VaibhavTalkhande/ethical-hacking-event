@@ -132,7 +132,10 @@ p{
         
     }
     .quiz ul{
+        margin: 0;
+        padding: 0;
         width: 100%;
+        height:min-content;
         grid-template-columns: repeat(1, 1fr);
         font-size: 1.2em;
         gap: 1em;
