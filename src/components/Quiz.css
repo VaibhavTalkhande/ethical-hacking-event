@@ -102,3 +102,25 @@ p{
     background-color: #007bff;
     color: #fff;
   }
+
+@media (max-width: 768px){
+    .quiz{
+        width: 100%;
+    }
+    .result h1{
+        width: 100%;
+    }
+    .result p{
+        width: 100%;
+    }
+    .result h2{
+        width: 100%;
+    }
+    .quiz ul{
+        width: 100%;
+    }
+    .quiz ul li{
+        width: 100%;
+    }
+}
+`

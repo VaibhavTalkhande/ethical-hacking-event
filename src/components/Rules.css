@@ -37,3 +37,13 @@
     text-align: center;
     
 }
+
+@media (max-width: 768px) {
+    .Rules p{
+        font-size: 15px;
+    }
+    .Rules ul li{
+        font-size: 1em;
+    }
+}
+`
