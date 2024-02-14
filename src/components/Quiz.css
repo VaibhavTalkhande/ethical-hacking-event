@@ -118,9 +118,18 @@ p{
     }
     .quiz ul{
         width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 1.2em;
+        gap: 1em;
+        
+        justify-content: center;
+        align-content: center;
+        place-items: center;
     }
     .quiz ul li{
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 `
