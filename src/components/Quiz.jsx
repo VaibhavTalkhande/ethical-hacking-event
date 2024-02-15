@@ -14,57 +14,81 @@ const Quiz = ({ userName }) => {
     // Fetch questions and setQuestions state
     // For now, let's assume questions are already set
     const dummyQuestions = [
-        { question: "What does 'CLI' stand for in Linux?",
-          options: ["Command Line Interface", "Common Linux Instruction", "Control Line Interface", "Computer Language Interface"],
-          answer: "Command Line Interface" },
-        { question: "Which command is used to list the contents of a directory in Linux?",
-        options: ["ls", "cd", "dir", "list"],
-        answer: "ls" },
-        { question: "In Linux, what command is used to create a new directory?",
-          options: ["newdir", "mkdir", "touch", "mkfile"],
-          answer: "mkdir" },
-        { question: "What command is used to display the manual of a command in Linux?",
-          options: ["man", "help", "info", "doc"],
-          answer: "man" },
-        { question: "Which command is used to change permissions of a file in Linux?",
-          options: ["chmod", "chperm", "chown", "perm"],
-          answer: "chmod" },
-        { question: "What does the command 'pwd' stand for in Linux?",
-          options: ["Print Working Directory", "Present Working Directory", "Print Directory", "Path Working Directory"],
-          answer: "Print Working Directory" },
-          { question: "Which command is used to copy files or directories in Linux?",
-          options: ["cp", "mv", "copy", "duplicate"],
-          answer: "cp" },
-        { question: "What command is used to remove a directory in Linux?",
-          options: ["rmdir", "rm", "remove", "delete"],
-          answer: "rm" },
-        { question: "Which command is used to search for files or directories in Linux?",
-          options: ["find", "search", "locate", "seek"],
-          answer: "find" },
-        { question: "What does the command 'grep' do in Linux?",
-          options: ["Display disk usage", "Find and replace text", "Search for a pattern in files", "Print system information"],
-          answer: "Search for a pattern in files" },
-        { question: "Which command is used to display the current date and time in Linux?",
-          options: ["date", "time", "datetime", "now"],
-          answer: "date" },
-        { question: "In Linux, what command is used to navigate to the parent directory?",
-          options: ["cd ..", "back", "parentdir", "up"],
-          answer: "cd .." },
-        {
-            question: "What command is used to display the last few lines of a file in Linux?",
-            options: ["tail", "head", "less", "more"],
-            answer: "tail"
-        },
-          {
-            question: "Which command is used to terminate a running process in Linux?",
-            options: ["kill", "stop", "end", "terminate"],
-            answer: "kill"
-          },
-          {
-            question: "What does the command 'sudo' do in Linux?",
-            options: ["Switch user to root", "Super user do", "Execute a command as another user", "Start a new terminal session"],
-            answer: "Switch user to root"
-          }
+      {
+        question: "Which of the following is an example of a network security vulnerability?",
+        options: ["SSL/TLS", "ARP Spoofing", "MAC Address Filtering", "DNSSEC"],
+        answer: "ARP Spoofing"
+      },
+      {
+        question: "What type of attack involves flooding a network with useless traffic?",
+        options: ["DDoS Attack", "SQL Injection", "Cross-Site Scripting", "Man-in-the-Middle Attack"],
+        answer: "DDoS Attack"
+      },
+      {
+        question: "Which tool is commonly used for scanning and mapping networks?",
+        options: ["Wireshark", "Nmap", "Metasploit", "John the Ripper"],
+        answer: "Nmap"
+      },
+      {
+        question: "What command is used to display the manual of a command in Linux?",
+        options: ["man", "help", "info", "doc"],
+        answer: "man"
+      },
+      {
+        question: "Which command is used to change permissions of a file in Linux?",
+        options: ["chmod", "chperm", "chown", "perm"],
+        answer: "chmod"
+      },
+      {
+        question: "What does the command 'pwd' stand for in Linux?",
+        options: ["Print Working Directory", "Present Working Directory", "Print Directory", "Path Working Directory"],
+        answer: "Print Working Directory"
+      },
+      {
+        question: "Which command is used to copy files or directories in Linux?",
+        options: ["cp", "mv", "copy", "duplicate"],
+        answer: "cp"
+      },
+      {
+        question: "What command is used to remove a directory in Linux?",
+        options: ["rmdir", "rm", "remove", "delete"],
+        answer: "rm"
+      },
+      {
+        question: "Which command is used to search for files or directories in Linux?",
+        options: ["find", "search", "locate", "seek"],
+        answer: "find"
+      },
+      {
+        question: "What does the command 'grep' do in Linux?",
+        options: ["Display disk usage", "Find and replace text", "Search for a pattern in files", "Print system information"],
+        answer: "Search for a pattern in files"
+      },
+      {
+        question: "Which command is used to display the current date and time in Linux?",
+        options: ["date", "time", "datetime", "now"],
+        answer: "date"
+      },
+      {
+        question: "In Linux, what command is used to navigate to the parent directory?",
+        options: ["cd ..", "back", "parentdir", "up"],
+        answer: "cd .."
+      },
+      {
+        question: "What command is used to display the last few lines of a file in Linux?",
+        options: ["tail", "head", "less", "more"],
+        answer: "tail"
+      },
+      {
+        question: "Which command is used to terminate a running process in Linux?",
+        options: ["kill", "stop", "end", "terminate"],
+        answer: "kill"
+      },
+      {
+        question: "What does the command 'sudo' do in Linux?",
+        options: ["Switch user to root", "Super user do", "Execute a command as another user", "Start a new terminal session"],
+        answer: "Switch user to root"
+      }
           
     ];
     setQuestions(dummyQuestions);
