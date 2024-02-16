@@ -10,7 +10,7 @@
     height: 100%;
     background-color: #000;
     border-radius: 10px;
-    border: 1px solid green;
+    border: 2px solid green;
 }
 p{
     color: #fff;
@@ -111,6 +111,12 @@ p{
     padding: 1em;
     text-align: center;
   
+  }
+  img{
+    width: 80%;
+    height: 80%;
+    object-fit: scale-down;
+    background-color: #fff;
   }
 
 @media (max-width: 768px){
