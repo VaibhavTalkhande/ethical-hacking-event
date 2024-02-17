@@ -16,44 +16,44 @@ useEffect(() => {
 // For now, let's assume questions are already set
 const dummyQuestions = [
   {
-    question: "Which of the following is an example of a network security vulnerability?",
-    options: ["SSL/TLS", "ARP Spoofing", "MAC Address Filtering", "DNSSEC"],
-    answer: "ARP Spoofing"
+    question: "Which of the following is an example of a cryptography algorithm?",
+    options: ["RSA", "SHA-256", "AES", "MD5"],
+    answer: "RSA"
   },
   {
-    question: "What type of attack involves flooding a network with useless traffic?",
-    options: ["DDoS Attack", "SQL Injection", "Cross-Site Scripting", "Man-in-the-Middle Attack"],
-    answer: "DDoS Attack"
+    question: "What type of attack involves tricking a user into giving away sensitive information?",
+    options: ["Phishing Attack", "Brute Force Attack", "Social Engineering Attack", "DNS Spoofing Attack"],
+    answer: "Phishing Attack"
   },
   {
-    question: "Which tool is commonly used for scanning and mapping networks?",
-    options: ["Wireshark", "Nmap", "Metasploit", "John the Ripper"],
-    answer: "Nmap"
+    question: "Which protocol is commonly used for securely transferring files over a network?",
+    options: ["FTP","SFTP", "SMTP", "HTTP"],
+    answer: "SFTP"
   },
   {
-    question: "What command is used to display the manual of a command in Linux?",
-    options: ["man", "help", "info", "doc"],
-    answer: "man"
+    question: "What command is used to list all files and directories in a directory in Linux?",
+    options: ["dir", "ls","list", "show"],
+    answer: "ls"
   },
   {
-    question: "Which command is used to change permissions of a file in Linux?",
-    options: ["chmod", "chperm", "chown", "perm"],
-    answer: "chmod"
+    question: "Which command is used to create a new directory in Linux?",
+    options: ["newdir", "create", "mkdir","md"],
+    answer: "mkdir"
   },
   {
-    question: "What does the command 'pwd' stand for in Linux?",
-    options: ["Print Working Directory", "Present Working Directory", "Print Directory", "Path Working Directory"],
-    answer: "Print Working Directory"
+    question: "What does the command 'cd' stand for in Linux?",
+    options: ["Current Directory", "Choose Directory","Change Directory", "Copy Directory"],
+    answer: "Change Directory"
   },
   {
-    question: "Which command is used to copy files or directories in Linux?",
-    options: ["cp", "mv", "copy", "duplicate"],
-    answer: "cp"
+    question: "Which command is used to display the contents of a file in Linux?",
+    options: ["read", "display", "show","cat"],
+    answer: "cat"
   },
   {
-    question: "What command is used to remove a directory in Linux?",
-    options: ["rmdir", "rm", "remove", "delete"],
-    answer: "rm"
+    question: "What command is used to find occurrences of a keyword in a file?",
+    options: ["find", "search", "locate","grep"],
+    answer: "grep"
   },
   {
     question: "Which command is used to search for files or directories in Linux?",
@@ -62,32 +62,32 @@ const dummyQuestions = [
   },
   {
     question: "What does the command 'grep' do in Linux?",
-    options: ["Display disk usage", "Find and replace text", "Search for a pattern in files", "Print system information"],
+    options: ["Search for a pattern in files", "Display disk usage", "Find and replace text", "Print system information"],
     answer: "Search for a pattern in files"
   },
   {
     question: "Which command is used to display the current date and time in Linux?",
-    options: ["date", "time", "datetime", "now"],
+    options: ["time","date", "datetime", "now"],
     answer: "date"
   },
   {
     question: "In Linux, what command is used to navigate to the parent directory?",
-    options: ["cd ..", "back", "parentdir", "up"],
+    options: ["back", "cd ..", "parentdir", "up"],
     answer: "cd .."
   },
   {
     question: "What command is used to display the last few lines of a file in Linux?",
-    options: ["tail", "head", "less", "more"],
+    options: ["head", "less","tail", "more"],
     answer: "tail"
   },
   {
     question: "Which command is used to terminate a running process in Linux?",
-    options: ["kill", "stop", "end", "terminate"],
+    options: ["stop", "end","kill", "terminate"],
     answer: "kill"
   },
   {
     question: "What does the command 'sudo' do in Linux?",
-    options: ["Switch user to root", "Super user do", "Execute a command as another user", "Start a new terminal session"],
+    options: ["Super user do", "Execute a command as another user", "Start a new terminal session","Switch user to root"],
     answer: "Switch user to root"
   },
     {
@@ -97,28 +97,27 @@ const dummyQuestions = [
       answer: "E"
     },
     {
-      question: "Enter the unique digits that satisfy the given equation.",
-      imageUrl: "https://cdn.quizzes.faceprep.in/VS_7/O_12/images/59765_1678175870.png",
-      options: ["6 × 7 + 3 = 45","5× 7 + 3 = 45","3 × 5 + 3 = 45","1 × 7 + 3 = 45"],
-      answer: "6 × 7 + 3 = 45"
+      question: "Guess the company logo",
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Red_Hat_logo.svg/288px-Red_Hat_logo.svg.png",
+      options: ["RedCap","RedHat","GoldHood","YellowTop"],
+      answer: "RedHat"
+    },{
+      question: "What is the name of the tool in Kali Linux",
+      imageUrl: "https://www.softinventive.com/blog/wp-content/uploads/2012/12/nmap-eye.jpg",
+      options: ["Aircrack-ng", "Reaver", "Nmap", "Wireshark"],
+      answer: "Nmap"
     },
     {
-      question: "Grids with elements in the range of 0 to 4 are coloured green. Grids with elements in the range of 5 to 9 are coloured grey.",
-      imageUrl: "https://cdn.quizzes.faceprep.in/VS_7/O_12/images/94017_1678177283.png",
-      options: ["A","B","C","D","E","F","G","H","I"],
-      answer: "B"
-    },
-    {
-      question: "Grids with elements in the range of 0 to 4 are coloured green. Grids with elements in the range of 5 to 9 are coloured grey.",
+      question: "Pick the one that doesn’t fit the group.",
       imageUrl: "https://cdn.quizzes.faceprep.in/VS_7/O_12/images/79097_1678179962.png",
       options: ["A","B","C","D","E","F","G","H","I"],
       answer: "E"
     },
     {
-      question: "Enter the unique digits that satisfy the given equation.",
-      imageUrl: "https://cdn.quizzes.faceprep.in/VS_7/O_12/images/87682_1678181521.png",
-      options: ["3 × 8 + 6 = 30","3 × 5 + 6 = 30","2 × 3 + 6 = 30","2 × 6 + 6 = 30"],
-      answer: "3 × 8 + 6 = 30"
+      question: "What is the name of the tool in Kali Linux",
+      imageUrl: "https://miro.medium.com/v2/resize:fit:581/1*jqc9VGIBgq9GkXeJ9jRRvA.png",
+      options: ["Hydra","Wireshark","Recon-ng","Maltego"],
+      answer: "Hydra"
     },
   
 ];
@@ -227,7 +226,8 @@ return (
 <h3>Question {currentQuestionIndex + 1}</h3>
 <div className="question">
   {questions[currentQuestionIndex]?.imageUrl && (
-    <img src={questions[currentQuestionIndex]?.imageUrl} alt="Question" />
+   <img src={questions[currentQuestionIndex]?.imageUrl} style={{ height: '250px' }} alt="Question" />
+
   )}
   <p>{questions[currentQuestionIndex]?.question}</p>
 </div>
